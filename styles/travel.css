@@ -1,16 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
+  
+}
+nav{
+  max-width: 1170px;
+
+  margin: 0 auto;
+  display: flex;
+
+}
+.nav-image{
+  
+  min-height:100px ;
+  display: flex;
+  width: 50%;
+  align-items: center;
+  gap: 17px;
+
+}
+.nav-image img{
+  width: 50px;
+  object-fit: cover;
+}
+.nav-image p{
+font-family: Mulish;
+color: #131318;
+font-size: 40px;
+font-weight: 800;
+
+}
+.nav-image p .xp{
+color: #FF5400;
+}
+nav .items{
+ 
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .items a{
+  text-decoration: none;
+  color:  #424247;
+  font-size: 18px;
+  font-weight: 400;
 }
 .banner {
   width: 1170px;
   height:500px;
   border-radius: 16px;
- 
   background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),
   url("../Images/Group13.png");
   background-repeat:no-repeat;
   margin: 146px auto;
 
 
+}
+
+@media screen and (max-width:600px){
+  nav{
+    flex-direction: column;
+align-items: center;
+  }
+  .items{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }
