@@ -306,7 +306,7 @@ h2 {
   justify-content: space-between;
 }
 .news-content{ 
-  width: 33%;
+  width: 41%;
   border-radius: 16px;
   border: 1px solid #FF5400;
   display: flex;
@@ -315,12 +315,35 @@ h2 {
  
 }
 .news-text{
-  width: 90%;
-  margin: 24px 0 0 24px;
+  width: 72%;
+  margin: 48px 0 48px 24px;
+  border-bottom: 1px solid rgba(24, 24, 210, 0.1);
+}
+.news .form{
+  width: 72%;
+  margin:0 auto;
 }
 .news .form input , button{
 display: block;
+width: 100%;
+margin-bottom: 24px;
+min-height: 52px;
 }
+.news .form  button{
+
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 800;
+  background-color: #ff5400;
+  border-style: none;
+  color: white;
+  }
+.news .form input {
+
+border-style: none;
+border-radius: 8px;
+background: rgba(19, 19, 24, 0.05);
+  }
 .news-content h1 {
   color: #131318; 
   font-size: 24px;
@@ -345,7 +368,7 @@ display: block;
 }
 
 .news-image {
-  width: 65%;
+  width: 57%;
 }
 .news-image img {
   width: 100%;
@@ -354,18 +377,7 @@ display: block;
   object-fit: cover;
   border-radius: 16px;
 }
-.news button {
-  width: 10em;
-  height: 52px;
-  border-radius: 8px;
-  background-color: #ff5400;
-  border-style: none;
-  color: white;
 
-  font-size: 20px;
-
-  font-weight: 800;
-}
 /* news-end */
 /* footer */
 footer {
