@@ -1,74 +1,216 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800;900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-  
 }
-nav{
+body {
+}
+nav {
   max-width: 1170px;
 
   margin: 0 auto;
   display: flex;
-
 }
-.nav-image{
-  
-  min-height:100px ;
+.nav-image {
+  min-height: 100px;
   display: flex;
   width: 50%;
   align-items: center;
   gap: 17px;
-
 }
-.nav-image img{
+.nav-image img {
   width: 50px;
   object-fit: cover;
 }
-.nav-image p{
-font-family: Mulish;
-color: #131318;
-font-size: 40px;
-font-weight: 800;
-
+.nav-image p {
+  font-family: Mulish;
+  color: #131318;
+  font-size: 40px;
+  font-weight: 800;
 }
-.nav-image p .xp{
-color: #FF5400;
+.nav-image p .xp {
+  color: #ff5400;
 }
-nav .items{
- 
+nav .items {
   width: 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-nav .items a{
+nav .items a {
   text-decoration: none;
-  color:  #424247;
+  color: #424247;
   font-size: 18px;
   font-weight: 400;
 }
 .banner {
-  width: 1170px;
-  height:500px;
+  max-width: 1170px;
+  min-height: 500px;
   border-radius: 16px;
-  background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),
-  url("../Images/Group13.png");
-  background-repeat:no-repeat;
-  margin: 146px auto;
 
-
+  margin: 0 auto;
+  background-image: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url("../Images/Group13.png");
+  background-repeat: no-repeat;
+}
+.banner-content {
+  max-width: 770px;
+  text-align: center;
+  margin: 0 auto;
+}
+.banner-text {
+  padding-top: 106px;
+}
+.banner-text h1 {
+  font-size: 64px;
+  color: white;
+  font-family: Mulish;
+  font-weight: 800;
+}
+.banner-text h4 {
+  font-size: 16px;
+  color: white;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 24px;
 }
 
-@media screen and (max-width:600px){
-  nav{
+.banner-input input,
+select {
+  width: 175px;
+  height: 52px;
+  padding-left: 10px;
+  border-style: none;
+  border-radius: 8px;
+  color: rgba(19, 19, 24, 0.5);
+}
+.banner-input {
+  display: flex;
+  margin-top: 48px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 16px;
+  justify-content: center;
+}
+.banner-input button {
+  width: 175px;
+  height: 52px;
+  padding-left: 10px;
+  border-style: none;
+  border-radius: 8px;
+  color: white;
+  background-color: #ff5400;
+}
+
+
+/* ----banner-end----*/
+/* popular-start */
+.popular{
+  border: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;  
+  margin: 100px auto;
+}
+.popular-content{
+  width: 50%;
+}
+.popular-content h1{
+  
+color: #131318;
+
+font-family: Mulish;
+font-size: 40px;
+
+font-weight: 800;
+
+}
+.popular p , .list{
+color: rgba(19, 19, 24, 0.70);
+font-family: Mulish;
+font-size: 16px;
+
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+}
+.popular p{
+margin: 24px 0;
+}
+.popular li{
+  margin-bottom: 15px;
+}
+.popular p , .list{
+  color: rgba(19, 19, 24, 0.70);
+font-family: Mulish;
+font-size: 16px;
+
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+}
+.list{
+  width: 87%;
+  padding-left: 3%;
+}
+.popular-image{
+  width:50%
+}
+.popular-image img{
+  width: 100%;
+}
+/* popular-end */
+
+@media screen and (max-width: 600px) {
+  nav {
     flex-direction: column;
-align-items: center;
+    align-items: center;
   }
-  .items{
+  .items {
     flex-direction: column;
     align-items: center;
     gap: 20px;
   }
 }
+@media screen and (max-width: 600px) {
+  .banner {
+    max-width: 335px;
+    max-height: 483px;
+    border-radius: 16px;
+  }
+  .banner-text {
+    padding: 34px 0;
+  }
+  .banner-text h1 {
+    font-size: 24px;
+   
+  }
+  .banner-text h4 {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .banner-input {
+    flex-direction: column;
+    max-width: 256px;
+    min-height: 255px;
+    margin: 0 auto;
+    gap: 10px;
+  }
+
+}
+@media screen and (max-width: 600px) {
+  .popular {
+    flex-direction: column;
+    align-items: center;
+  }
+  .items {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
